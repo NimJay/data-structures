@@ -54,10 +54,3 @@ function operations_to_table($operations)
     $table .= '</tbody></table>';
     return $table;
 }
-
-function get_footer() 
-{
-    return '<footer>
-    <p>Found an issue or got suggestions?<br/> Let me know on <a href="https://github.com/NimJay" target="_blank">GitHub</a> or <a href="https://twitter.com/IAmNimJay" target="_blank">Twitter</a>. :)</p>
-</footer>';
-}

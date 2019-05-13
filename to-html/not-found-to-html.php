@@ -1,6 +1,6 @@
 <?php
 
-function home_to_html()
+function not_found_to_html()
 {
     return '<!DOCTYPE html>
 <html lang="en">
@@ -11,14 +11,14 @@ function home_to_html()
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="icon" href="favicon.png" type="image/png">
 
-    <title>Data Structures</title>
+    <title>Page Not Found</title>
     <style>'.file_get_contents(__DIR__ . '/inline-style.css').'</style>
 </head>
 <body>
     <main>
         <header>
-            <h1>Data Structures</h1>
-            <p>This site details the operations of various data structures.</p>
+            <h1>Page Not Found</h1>
+            <p>This page doesn\'t seem to exist. &lt;/3</p>
         </header>
         '.get_nav().'
     </main>

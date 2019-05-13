@@ -30,4 +30,5 @@ if (count($pathSegs) === 2) {
 
 
 // TODO: Handle 404s more gracefully.
-echo 'Page not found.';
+
+echo not_found_to_html();
