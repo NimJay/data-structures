@@ -9,9 +9,21 @@ require_once(__DIR__ . '/to-html/to-html.php');
 
 
 if (count($pathSegs) === 2) {
+
+    // Data structure page.
     $dataStructure = get_data_structure($pathSegs[1]);
     if ($dataStructure) {
         echo data_structure_to_html($dataStructure);
+        return;
+
+    // Home page.
+    } else if (empty($pathSegs[1])) {
+        echo home_to_html();
+        return;
+
+    // File!
+    } else if (file_exists(__DIR__ . $path)) {
+        echo file_get_contents(__DIR__ . '/favicon.png');
         return;
     }
 }

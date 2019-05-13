@@ -7,6 +7,10 @@ function data_structure_to_html($dataStructure)
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="favicon.png" type="image/png">
+
     <title>' . $dataStructure['name'] . '</title>
     <style>'.file_get_contents(__DIR__ . '/inline-style.css').'</style>
 </head>
@@ -23,13 +27,6 @@ function data_structure_to_html($dataStructure)
 </body>
 </html>
 ';
-}
-
-function get_css() 
-{
-    return '<style type="text/css">
-    body
-</style>';
 }
 
 function operations_to_section($operations, $heading)
@@ -56,18 +53,6 @@ function operations_to_table($operations)
     }
     $table .= '</tbody></table>';
     return $table;
-}
-
-function get_nav($activeDataStruct)
-{
-    global $DATA_STRUCTURES;
-    $nav = '<nav><ul>';
-    foreach ($DATA_STRUCTURES as $dataStruct) {
-        $name = $dataStruct['name'];
-        $isActive = $dataStruct === $activeDataStruct;
-        $nav .= '<li><a class="' . ($isActive ? 'active' : '') . '" href="' . name_to_slug($name) . '">' . $name . '</a></li>';
-    }
-    return $nav . '</ul></nav>';
 }
 
 function get_footer() 
