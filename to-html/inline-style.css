@@ -1,0 +1,88 @@
+body {
+    font-family: "Century Gothic", "Avant Garde Gothic", "Avant Garde", "URW Gothic L", helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(230, 210, 200);
+}
+
+
+h1, h2 {
+    font-weight: normal;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+h1 {
+    font-size: 60px;
+    margin: 20px 0 0 0;
+    line-height: 1.4em;
+    display: inline-block;
+    border-bottom: solid 4px rgb(0, 170, 50); /* Green */
+}
+
+a, a:visited {
+    color: rgb(50, 100, 255); /* Blue. */
+    text-decoration: none;
+}
+
+table {
+    margin: 20px 0 0 0;
+}
+td, th {
+    padding: 10px 5px;
+}
+th {
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+
+
+/* Operation */
+table.table-operations tr td:first-child {
+    font-size: 20px;
+    color: rgb(0, 170, 50); /* Green */
+    font-family: "courier new", courier, monospace;
+}
+/* Big O */
+table.table-operations tr th:nth-child(2) {
+    min-width: 50px;
+}
+table.table-operations tr td:nth-child(2) {
+    font-size: 20px;
+    text-align: center;
+}
+/* Description */
+table.table-operations tr th:nth-child(3) {
+    text-align: left;
+}
+
+
+section, header, footer, nav {
+    padding: 20px 10px;
+    margin: auto;
+    max-width: 800px;
+}
+
+
+/* Navigation */
+nav ul {
+    margin-top: 100px;
+    padding: 0;
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    margin: 10px 30px 0 0;
+}
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+
+footer {
+    margin-top: 50px;
+    font-size: 12px;
+}
