@@ -29,7 +29,7 @@ table {
     margin: 20px 0 0 0;
 }
 td, th {
-    padding: 10px 5px;
+    padding: 12px 8px;
 }
 th {
     font-size: 14px;
@@ -44,7 +44,7 @@ th {
 table.table-operations tr td:first-child {
     font-size: 20px;
     color: rgb(0, 170, 50); /* Green */
-    font-family: "courier new", courier, monospace;
+    font-family: "Lucida Console", Monaco, monospace;
 }
 /* Big O */
 table.table-operations tr th:nth-child(2) {
