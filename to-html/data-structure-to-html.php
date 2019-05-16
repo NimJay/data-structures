@@ -11,7 +11,7 @@ function data_structure_to_html($dataStructure)
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="icon" href="favicon.png" type="image/png">
 
-    <title>' . $dataStructure['name'] . '</title>
+    <title>' . $dataStructure['name'] . ' - Data Structure</title>
     <style>'.file_get_contents(__DIR__ . '/inline-style.css').'</style>
 </head>
 <body>
