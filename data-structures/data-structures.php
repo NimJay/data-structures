@@ -23,6 +23,15 @@ function get_data_structure($slug)
 }
 
 
+function get_data_structures_of_type($type)
+{
+    global $DATA_STRUCTURES;
+    return array_filter($DATA_STRUCTURES, function ($dataStruct) use ($type) {
+        return $dataStruct['type'] === $type;
+    });
+}
+
+
 // Convert strings like "Data Structure", return "data-structure".
 function name_to_slug($name) 
 {
