@@ -9,7 +9,7 @@ $DATA_STRUCTURES[] = [
         [
             'name' => 'push',
             'averageO' => '1',
-            'description' => 'Insert an element into the stack.',
+            'description' => 'Insert an element into the Stack.',
         ],
         [
             'name' => 'pop',
@@ -27,6 +27,6 @@ $DATA_STRUCTURES[] = [
     ],
     
     'characteristics' => [
-        'FIFO'
+        'LIFO'
     ],
 ];
