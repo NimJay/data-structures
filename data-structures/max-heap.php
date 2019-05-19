@@ -4,6 +4,7 @@ $DATA_STRUCTURES[] = [
 
     'name' => 'Max Heap',
     'type' => '', // TODO: Figure out a clean way to categorize.
+    'description' => 'A Max Heap is a Tree with a special property: each node is greater than (or equal to) its children nodes. This ensures that the top-most node (root node) is the maximum.',
 
     'operations' => [
         [

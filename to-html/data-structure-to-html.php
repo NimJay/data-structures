@@ -18,6 +18,7 @@ function data_structure_to_html($dataStructure)
     <main>
         <header>
             <h1>'.$dataStructure['name'].'</h1>
+            <p>'.$dataStructure['description'].'</p>
         </header>
         '.operations_to_section($dataStructure['operations'], 'Operations').'
         '.operations_to_section($dataStructure['additionalOperations'], 'More Operations').'
