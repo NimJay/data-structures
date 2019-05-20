@@ -13,7 +13,7 @@ function get_nav($activeDataStruct = null)
     foreach ($DATA_STRUCTURES as $dataStruct) {
         $name = $dataStruct['name'];
         $isActive = $dataStruct === $activeDataStruct;
-        $nav .= '<li><a class="' . ($isActive ? 'active' : '') . '" href="' . name_to_slug($name) . '">' . $name . '</a></li>';
+        $nav .= '<li><a class="' . ($isActive ? 'active' : '') . '" href="/data-structures/' . name_to_slug($name) . '">' . $name . '</a></li>';
     }
     return $nav . '</ul></nav>';
 }
