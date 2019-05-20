@@ -9,7 +9,7 @@ require_once(__DIR__ . '/to-html/to-html.php');
 
 
 // /data-structures
-if (count($pathSegs) === 2 && $pathSegs[1] === 'data-structures') {
+if ($path === '/data-structures/') {
     echo home_to_html();
     return;
 }
