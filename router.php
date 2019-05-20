@@ -34,4 +34,5 @@ if ($pathSegs[1] === 'data-structures') {
 }
 
 
+header("HTTP/1.0 404 Not Found");
 echo not_found_to_html();
