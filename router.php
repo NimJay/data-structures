@@ -8,16 +8,16 @@ require_once(__DIR__ . '/data-structures/data-structures.php');
 require_once(__DIR__ . '/to-html/to-html.php');
 
 
-if (count($pathSegs) === 2) {
+if (count($pathSegs) === 3) {
 
     // Data structure page.
-    $dataStructure = get_data_structure($pathSegs[1]);
+    $dataStructure = get_data_structure($pathSegs[2]);
     if ($dataStructure) {
         echo data_structure_to_html($dataStructure);
         return;
 
     // Home page.
-    } else if (empty($pathSegs[1])) {
+    } else if (empty($pathSegs[2])) {
         echo home_to_html();
         return;
 
@@ -28,7 +28,5 @@ if (count($pathSegs) === 2) {
     }
 }
 
-
-// TODO: Handle 404s more gracefully.
 
 echo not_found_to_html();
