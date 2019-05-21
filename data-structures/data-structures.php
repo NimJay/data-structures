@@ -6,6 +6,7 @@ $DATA_STRUCTURES = []; // Populated by files required below.
 require_once(__DIR__ . '/stack.php');
 require_once(__DIR__ . '/queue.php');
 require_once(__DIR__ . '/max-heap.php');
+require_once(__DIR__ . '/min-heap.php');
 
 
 /**
