@@ -27,7 +27,7 @@ $DATA_STRUCTURES[] = [
     'additionalOperations' => [
         [
             'name' => 'heapify',
-            'averageO' => 'nlog(n)',
+            'averageO' => 'n',
             'description' => 'Create a new Heap with a given set of keys.',
         ],
     ],
