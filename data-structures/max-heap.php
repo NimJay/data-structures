@@ -31,8 +31,4 @@ $DATA_STRUCTURES[] = [
             'description' => 'Create a new Heap with a given set of keys.',
         ],
     ],
-
-    'characteristics' => [
-        'LIFO'
-    ],
 ];
